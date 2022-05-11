@@ -3,7 +3,7 @@ SPDX-License-Identifier: Apache-2.0
 Copyright © 2021 Intel Corporation
 ```
 
-- [ITP/SEC/PA/01: Deploy and Verify Controller Deployment](#itpsecpa01-Deploy-and-Verify-Controller-Deployment)
+- [ITP/SEO/CN/01: Deploy and Verify Controller Deployment](#itpsecpa01-Deploy-and-Verify-Controller-Deployment)
 
   - [Test Summary](#test-summary)
   - [Prerequisites](#prerequisites)
@@ -12,7 +12,7 @@ Copyright © 2021 Intel Corporation
 
   
  
- ## ITP/SEC/PA/01: Deploy and Verify Controller Deployment
+ ## ITP/SEO/CN/01: Deploy and Verify Controller Deployment
  
  ### Test Summary
  
