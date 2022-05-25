@@ -182,6 +182,30 @@ spec:
 
 ```shell
 root@esi-xx:~# kubectl describe pod huge-pages-example
+
+Conditions:
+  Type           Status
+  PodScheduled   False
+Volumes:
+  hugepage:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     HugePages
+    SizeLimit:  <unset>
+  kube-api-access-xggsx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  31s   default-scheduler  0/1 nodes are available: 1 Insufficient hugepages-1Gi.
+
 ```
 
  ## ITP/SEO/HP/02: Set “default_hugepage as 2M” and “amount of hugepage_2M as 150” and verify the system resource and memory info
@@ -494,8 +518,38 @@ Hugetlb:         307200 kB
 ```shell
 root@esi-xx:~# vi /etc/default/grub
 
-append:
-GRUB_CMDLINE_LINUX_DEFAULT="default_hugepagesz=1G hugepagesz=1G hugepages=8 intel_iommu=on iommu=pt rdt=l3cat"
+GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} default_hugepagesz=1G hugepagesz=1G hugepages=6 intel_iommu=on " # hugepages
+```
+6. Update grub and restart kubelet
+
+```shell
+root@esi-xx:~# systemctl restart kubelet
+root@esi-xx:~# update-grub
+root@esi-xx:~# reboot
+```
+7. Verify the system resource and memory info
+
+```shell
+root@esi-xx:~# kubectl describe nodes esi-xx | grep hug
+  hugepages-1Gi:      6Gi
+  hugepages-2Mi:      0
+  hugepages-1Gi:      6Gi
+  hugepages-2Mi:      0
+  hugepages-1Gi      1Gi (16%)    1Gi (16%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+root@esi-xx:~# cat /proc/meminfo  | grep Hug
+AnonHugePages:     47104 kB
+ShmemHugePages:        0 kB
+FileHugePages:         0 kB
+HugePages_Total:       6
+HugePages_Free:        5
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:    1048576 kB
+Hugetlb:         6291456 kB
+```
+
+
 
 
 
