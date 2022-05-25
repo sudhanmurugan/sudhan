@@ -340,6 +340,7 @@ spec:
 
 ```shell
 root@esi-xx:~# kubectl describe pod huge-pages-example
+![image](https://user-images.githubusercontent.com/100768147/170252571-17951c7d-0e57-4328-8c41-77342ee85d8e.png)
 ```
 
 ## ITP/SEO/HP/03: Configure hugepage to 1G in an already deployed system with 2M configured, and check if both the sizes are updated in the cluster
