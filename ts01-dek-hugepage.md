@@ -340,7 +340,29 @@ spec:
 
 ```shell
 root@esi-xx:~# kubectl describe pod huge-pages-example
-![image](https://user-images.githubusercontent.com/100768147/170252571-17951c7d-0e57-4328-8c41-77342ee85d8e.png)
+
+Conditions:
+  Type           Status
+  PodScheduled   False
+Volumes:
+  hugepage:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     HugePages
+    SizeLimit:  <unset>
+  kube-api-access-6bkpc:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  22s   default-scheduler  0/1 nodes are available: 1 Insufficient hugepages-2Mi.
 ```
 
 ## ITP/SEO/HP/03: Configure hugepage to 1G in an already deployed system with 2M configured, and check if both the sizes are updated in the cluster
