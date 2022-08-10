@@ -2,7 +2,7 @@
 SPDX-License-Identifier: Apache-2.0
 Copyright © 2021 Intel Corporation
 ```
-- [SEC/INT/ESP/MULTIPROF/DEPLOY/01: Check the build and deployment time for SE profiles-Controller, 5GC and Apps](#secintespmultiprofdeploy01-Check-the-build-and-deployment-time-for-SE-profiles-Controller,-5GC-and-Apps)
+- [SEC/INT/ESP/MULTIPROF/DEPLOY/01: Check the build and deployment time for SE profiles, Controller, 5GC and Apps](#secintespmultiprofdeploy01-Check-the-build-and-deployment-time-for-SE-profiles,-Controller,-5GC-and-Apps)
 
    - [Test Summary](#test-summary)
    - [Prerequisites](#prerequisites)
@@ -13,7 +13,7 @@ Copyright © 2021 Intel Corporation
    - [Test Summary](#test-summary-1)
    - [Prerequisites](#prerequisites-1)
    - [Test steps](#test-steps-1)
-   - 
+ 
 ## SEC/INT/ESP/MULTIPROF/DEPLOY/01: Check the build and deployment time for SE profiles - Controller, 5GC and Apps
   
 ### Test Summary
