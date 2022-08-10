@@ -8,7 +8,7 @@ Copyright © 2021 Intel Corporation
   - [Prerequisites](#prerequisites)
   - [Test steps](#test-steps)
   
-  ## SEC/INT/ESP/CTRL/DEPLOY/01: Verify controller deployment from admin machine using online provisioning toolchain
+## SEC/INT/ESP/CTRL/DEPLOY/01: Verify controller deployment from admin machine using online provisioning toolchain
   
 ### Test Summary
  
@@ -20,7 +20,7 @@ Test focused on deployment of controller from admin machine using online provisi
 
 ### Test steps
 
-1. Configure toolchain prerequisites in admin machine 
+1. Configure provisioning setup in admin machine, refer the link below
 ```shell
 https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob/main/get-started.md
 ```
