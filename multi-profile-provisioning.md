@@ -14,7 +14,7 @@ Copyright © 2021 Intel Corporation
    - [Prerequisites](#prerequisites-1)
    - [Test steps](#test-steps-1)
  
-## SEC/INT/ESP/MULTIPROF/DEPLOY/01: Check the build and deployment time for SE profiles - Controller, 5GC and Apps
+## SEC/INT/ESP/MULTIPROF/DEPLOY/01: Check the build and deployment time for SE profiles like Controller, 5GC and Apps
   
 ### Test Summary
  
