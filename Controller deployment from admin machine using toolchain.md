@@ -4,15 +4,15 @@ Copyright © 2021 Intel Corporation
 ```
 - [SEC/INT/ESP/CTRL/DEPLOY/01: Verify controller deployment from admin machine using online provisioning toolchain](#secintespctrldeploy01-Verify-controller-deployment-from-admin-machine-using-online-provisioning-toolchain)
 
-  - [Test Summary](#test-summary)
-  - [Prerequisites](#prerequisites)
-  - [Test steps](#test-steps)
+   - [Test Summary](#test-summary)
+   - [Prerequisites](#prerequisites)
+   - [Test steps](#test-steps)
   
  - [SEC/INT/ESP/CTRL/DEPLOY/02: Verify controller deployment from admin machine using provisioning tool chain in an air gap environment](#secintespctrldeploy02-Verify-controller-deployment-from-admin-machine-using-provisioning-tool-chain-in-an-air-gap-environment)
 
-  - [Test Summary](#test-summary1)
-  - [Prerequisites](#prerequisites1)
-  - [Test steps](#test-steps1)
+   - [Test Summary](#test-summary1)
+   - [Prerequisites](#prerequisites1)
+   - [Test steps](#test-steps1)
 
 ## SEC/INT/ESP/CTRL/DEPLOY/01: Verify controller deployment from admin machine using online provisioning toolchain
   
@@ -91,7 +91,7 @@ https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob
 [admin_machine]# ./se_build.py
 ```
 
-6. Copy the offline build package into target machine and start the deployment using below command
+6. Copy the offline build package into airgap environment and start the deployment using below command
 
 ```shell
 [admin_machine]# ./se_install.py -c custom.yaml
