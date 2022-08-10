@@ -10,9 +10,9 @@ Copyright © 2021 Intel Corporation
   
  - [SEC/INT/ESP/CTRL/DEPLOY/02: Verify controller deployment from admin machine using provisioning tool chain in an air gap environment](#secintespctrldeploy02-Verify-controller-deployment-from-admin-machine-using-provisioning-tool-chain-in-an-air-gap-environment)
 
-   - [Test Summary](#test-summary1)
-   - [Prerequisites](#prerequisites1)
-   - [Test steps](#test-steps1)
+   - [Test Summary](#test-summary-1)
+   - [Prerequisites](#prerequisites-1)
+   - [Test steps](#test-steps-1)
 
 ## SEC/INT/ESP/CTRL/DEPLOY/01: Verify controller deployment from admin machine using online provisioning toolchain
   
