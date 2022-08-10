@@ -8,10 +8,9 @@ Copyright © 2021 Intel Corporation
   - [Prerequisites](#prerequisites)
   - [Test steps](#test-steps)
   
-  
   ## SEC/INT/ESP/CTRL/DEPLOY/01: Verify controller deployment from admin machine using online provisioning toolchain
   
-   ### Test Summary
+### Test Summary
  
 Test focused on deployment of controller from admin machine using online provisioning toolchain
 
