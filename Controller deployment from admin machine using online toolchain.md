@@ -27,7 +27,7 @@ https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob
 
 2. Check out virgo/staging repo by executing the below command:
 ```shell
-        git clone --recursive --branch main https://github.com/intel-innersource/applications.services.smart-edge.staging.git
+ git clone --recursive --branch main https://github.com/intel-innersource/applications.services.smart-edge.staging.git
 ```
 3. Navigate to experience kit directory and generate platfrom config yaml by executing below command
 ```shell
