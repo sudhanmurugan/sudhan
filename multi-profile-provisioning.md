@@ -93,7 +93,7 @@ https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob
 [admin_machine]# ./se_install.py -c custom.yaml
 ```
 
-6. Interup the deployment at point, while deploying controller, 5GC or Apps
+6. Interupt the deployment at point, while deploying controller, 5GC or Apps
 
 6. Goto the target machines one by one and check the pods were up and running.
 
