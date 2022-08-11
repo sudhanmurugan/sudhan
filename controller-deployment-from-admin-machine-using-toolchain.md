@@ -91,7 +91,7 @@ https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob
 [admin_machine]# ./se_build.py
 ```
 
-6. Copy the offline build package into airgap environment and start the deployment using below command
+6.  In air gap environment start the deployment using below command
 
 ```shell
 [admin_machine]# ./se_install.py -c custom.yaml
