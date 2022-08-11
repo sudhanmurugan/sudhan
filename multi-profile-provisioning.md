@@ -26,7 +26,7 @@ Test focused on checking the build and time taked for the deployment of mutiple 
 
 ### Test steps
 
-1. Configure provisioning setup in provisioning machine refer the link below
+1. Configure provisioning setup in admin machine refer the link below
 
 ```shell
 https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob/main/get-started.md
