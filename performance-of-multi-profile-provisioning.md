@@ -47,10 +47,10 @@ https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob
 
 6. Interupt the deployment at point, while deploying controller, 5GC or Apps
 
-6. Goto the target machines one by one and check the pods were up and running.
+7. Goto the target machines one by one and check the pods were up and running.
 
  ```shell
  [target_machine]# kubectl get pods -A
  ```
  
- 7. Note down the each target machine deployment status
+ 8. Note down the each target machine deployment status
