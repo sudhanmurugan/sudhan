@@ -69,7 +69,7 @@ Test focused on the status of deployment if any failure happened on any one of t
 
 ### Test steps
 
-1. Configure provisioning setup in provisioning machine refer the link below
+1. Configure provisioning setup in admin machine refer the link below
 
 ```shell
 https://github.com/intel-innersource/applications.services.smart-edge.virgo/blob/main/get-started.md
