@@ -1,9 +1,9 @@
-- [SEC/STB/CLUST/01: Verify Redeploy of controller and Edge node clusters (a and b) using online provisioning for 10 iterations](#secstbclust01-Verify-Redeploy-of-controller-and-Edge-node-a-and-b-using-online-provisioning-for-10-iterations)
+- [SEC/STB/CLUST/01: Verify Redeploy of controller and Edge node clusters (a) using online provisioning for 10 iterations](#secstbclust01-Verify-Redeploy-of-controller-and-Edge-node-a-using-online-provisioning-for-10-iterations)
     - [Test Summary](#test-summary)
     - [Prerequisites](#prerequisites)
     - [Test Steps](#test-steps)
 
-## SEC/STB/CLUST/01: Verify Redeploy of controller and Edge node clusters (a and b) using online provisioning for 10 iterations
+## SEC/STB/CLUST/01: Verify Redeploy of controller and Edge node clusters (a) using online provisioning for 10 iterations
      
   ### Test Summary
   Performing Redeploy of controller and node clusters (5gc & apps) using online provisioning for 10 iterations
